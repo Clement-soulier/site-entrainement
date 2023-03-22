@@ -1,0 +1,123 @@
+/* Clément */
+html{
+    background-color: rgb(84, 84, 84);
+}
+
+.header{
+    height: 100px;
+    background-image: url("./img/montagnes.svg");
+    background-origin: border-box;
+    background-size:200px;
+    background-repeat: repeat-x;
+}
+
+#logo{
+    margin-left: 50%;
+    width: 50px;
+}
+
+a>p{
+    margin-top: 15px;
+    color: aliceblue;
+}
+
+.Nav_Bar>a:hover{
+    background-color: rgb(92, 97, 102);
+}
+.Nav_Bar>a{
+    display: block;
+    background-color: rgb(37, 35, 35);
+    text-align: center;
+    text-decoration: none;
+}
+
+.Nav_Bar{
+    position: sticky;
+    background-color: rgb(37, 35, 35);
+    z-index: 5;
+    top: 0px;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px,1fr));
+    grid-template-rows: 50px;
+}
+
+.presentation{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(100px,1fr));
+    grid-template-rows: 400px;
+    background-color: black;
+    margin: 10px;
+    color: aliceblue;
+}
+
+.presentation:nth-child(2n+1)>H1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.presentation:nth-child(2n+1)>p{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 20vh;
+}
+
+.presentation:nth-child(2n+1)>img{
+    position: absolute;
+    
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.presentation:nth-child(2n)>H1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.presentation:nth-child(2n)>p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 20vh;
+}
+
+.presentation:nth-child(2n)>img{
+    position: absolute;
+    left: 20%;
+    align-self: right;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+/* Clément */
+
+/* Jules */
+/* Jules */
+/* Titouan */
+.collaborateurs {
+    overflow-x: scroll;
+    overflow: auto;
+    white-space: nowrap;
+}
+.collaborateurs > div {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-grid;
+    width: 400px; 
+    height: 400px;
+    grid-template-rows: 5% 75% 19% 1%;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(61, 61, 65);
+}
+.collaborateurs > div > h2 {
+    grid-row: 3;
+    font-family: Verdana;
+    color: black;
+    font-size: 1.45em;
+    margin-bottom: 0;
+}
+.collaborateurs > div > img {
+    grid-row: 2;
+    width: 90%;
+    height: 100%;
+}
+/* Titouan */
