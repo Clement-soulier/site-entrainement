@@ -1,0 +1,50 @@
+/* Jules */
+body {
+    overflow-x: hidden;
+    /* background-color: #202020; */
+}
+
+#scroll {
+    position: relative;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+#scroll > div {
+    width: 500vw;
+    display: flex;
+    transition: transform 0.3s;
+}
+
+#scroll > div > img {
+    background-color: #444;
+    width: 40vw;
+    height: 40vw;
+}
+
+@media (max-width: 700px) {
+    #scroll > div > img {
+        width: 80vw;
+        height: 80vw;
+    }
+    #left, #right {
+        top: calc(40vw - 32px) !important;
+    }
+}
+
+#left, #right {
+    position: absolute;
+    width: 64px;
+    top: calc(20vw - 32px);
+    transition: filter 0.3s;
+    cursor: pointer;
+}
+#left:hover, #right:hover {
+    filter: invert(1);
+}
+#left {
+    left: 0;
+}
+#right {
+    right: 0;
+}
