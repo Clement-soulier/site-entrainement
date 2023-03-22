@@ -90,6 +90,15 @@ a>p{
 /* Clément */
 
 /* Jules */
+footer {
+    background-color: #202020;
+    text-align: center;
+    margin-top: 32px;
+    padding: 16px;
+}
+footer > * {
+    color: white;
+}
 /* Jules */
 /* Titouan */
 .collaborateurs {
