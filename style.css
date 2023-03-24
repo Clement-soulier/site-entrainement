@@ -1,91 +1,105 @@
 /* Clément */
 html{
-    background-color: rgb(84, 84, 84);
+    background-color: black;
 }
-
-.header{
-    height: 100px;
-    background-image: url("./img/montagnes.svg");
-    background-origin: border-box;
-    background-size:200px;
-    background-repeat: repeat-x;
+body {
+    margin: 0;
 }
-
-#logo{
-    margin-left: 50%;
-    width: 50px;
+.noSelect {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
-
-a>p{
-    margin-top: 15px;
-    color: aliceblue;
-}
-
-.Nav_Bar>a:hover{
-    background-color: rgb(92, 97, 102);
-}
-.Nav_Bar>a{
-    display: block;
-    background-color: rgb(37, 35, 35);
+header{
+    width: 100vw;
+    background-color: white;
+    height: 93vh;
+    display: table-cell;
     text-align: center;
+    vertical-align: middle;
+}
+header > img {
+    width: 54vh;
+    margin-bottom: 5vh;
+}
+header > p {
+    font-family: Tahoma;
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.Nav_Bar > div > a {
+    font-family: 'Calibri';
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    color: black;
     text-decoration: none;
+}
+.Nav_Bar > div > a, .Nav_Bar > div > a:hover {
+    transition-property: transform letter-spacing;
+    transition-duration: 300ms;
+}
+.Nav_Bar > div > a:hover {
+    transform: scale(1.1);
+    letter-spacing: 0.25em;
 }
 
 .Nav_Bar{
     position: sticky;
-    background-color: rgb(37, 35, 35);
+    background-color: white;
     z-index: 5;
     top: 0px;
+    height: 7vh;
+}
+.Nav_Bar > div {
     display: grid;
-    grid-template-columns: repeat(4,minmax(100px,1fr));
-    grid-template-rows: 50px;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
 
-.presentation{
-    position: relative;
+p, h1 {
+    color: white;
+    font-family: 'Calibri';
+    margin: 0;
+}
+
+h1 { font-size: 4em; }
+p { font-size: 1.5em; }
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+article > section {
     display: grid;
-    grid-template-columns: repeat(2,minmax(100px,1fr));
-    grid-template-rows: 400px;
+    align-items: center;
+}
+article > section :nth-child(2) > * {
+    margin-left: 5vw;
+    margin-right: 7vw;
+}
+article > section :nth-child(2) > h1 { margin-bottom: 8vh; }
+article > section :nth-child(2) > p { margin-bottom: 8vh; }
+article > section > img {
+    width: 100%;
+}
+article section:nth-child(2n + 1) { 
+    grid-template-columns: 1.2fr 0.8fr; 
     background-color: black;
-    margin: 10px;
-    color: aliceblue;
 }
-
-.presentation:nth-child(2n+1)>H1{
-    grid-column: 1/2;
-    grid-row: 1/2;
+article section:nth-child(2n + 1) > img { order: 2; }
+article section:nth-child(2n) {
+    grid-template-columns: 0.8fr 1.2fr; 
+    background-color: white;
 }
-
-.presentation:nth-child(2n+1)>p{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    margin-top: 20vh;
-}
-
-.presentation:nth-child(2n+1)>img{
-    position: absolute;
-    
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.presentation:nth-child(2n)>H1{
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-.presentation:nth-child(2n)>p{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 20vh;
-}
-
-.presentation:nth-child(2n)>img{
-    position: absolute;
-    left: 20%;
-    align-self: right;
-    grid-column: 1/2;
-    grid-row: 1/2;
+article section:nth-child(2n) > div > p, article section:nth-child(2n) > div > h1 {
+    color: black;
 }
 /* Clément */
 
