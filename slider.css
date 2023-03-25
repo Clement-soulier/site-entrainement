@@ -1,0 +1,56 @@
+.slider {
+    display: grid;
+    position: relative;
+    grid-template-columns: 33vw 33vw auto;
+    grid-template-rows: 33vw;
+    background-color: transparent;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.slider > #elmts {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 33vw;
+    grid-template-rows: 100%;
+    column-gap: 1vw;
+    margin-left: 33vw;
+}
+
+.slider > #elmts > * {
+    width: 100%;
+    height: auto;
+    translate: 0% 0%;
+}
+
+.slider > #rightMask {
+    background: linear-gradient(to right, transparent, black);
+    position: absolute;
+    z-index: 10;
+    width: 33vw;
+    height: 33vw;
+    left: 75vw;
+}
+
+.slider > #leftMask {
+    background: linear-gradient(to left, transparent, black);
+    position: absolute;
+    z-index: 10;
+    width: 33vw;
+    height: 33vw;
+    left: -7vw;
+}
+
+.slider > #elmts > div {
+    background-color: black;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px white
+}
+.slider > #elmts > div > h2 {
+    color: white;
+    font-size: large;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./scrollstyle.css" />
+    <link rel="stylesheet" href="./slider.css">
     <title>Manly Bear Barber</title>
   </head>
   <body>
@@ -16,9 +17,10 @@
     <div class="Nav_Bar">
       <div>
         <a href="">Home</a>
-        <a href="">Haircuts</a>
+        <a href="#scroll">Haircuts</a>
         <a href="">Reviews</a>
         <a href="">Contact</a>
+        <a href="">Jobs</a>
       </div>
     </div>
     <article>
@@ -43,6 +45,27 @@
           </p>
         </div>
       </section>
+      <section>
+        <img src="img/image4.jpg" alt="">
+        <div>
+          <h1>Lorem, ipsum.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic neque nostrum.</p>
+        </div>
+      </section>
+      <section>
+        <img src="img/image5.jpg" alt="">
+        <div>
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem soluta consequatur dolores nesciunt. Odit consequatur eligendi modi repudiandae nemo nesciunt?</p>
+        </div>
+      </section>
+      <section>
+        <img src="img/image3.jpg" alt="">
+        <div>
+          <h1>Join us</h1>
+          <p>If you are looking for a full time job and you already have an professional experience in hairdressing, click this <a href="">link</a>.<br>We can train new team members of course.</p>
+        </div>
+      </section>
     </article>
     <!-- scroll section -->
     <div id="scroll">
@@ -59,26 +82,32 @@
       <img src="./img/left-arrow.png" id="left" alt="" onclick="left()">
       <img src="./img/right-arrow.png" id="right" alt="" onclick="right()">
   </div>
-  <div class="collaborateurs">
-    <div>
-    <img src="" alt="picture profile" />
-    <h2>Cole Jackson</h2>
-    </div>
-    <div>
-    <img src="" alt="picture profile" />
-    <h2>Tyler Stewart</h2>
-    </div>
-    <div>
-    <img src="" alt="picture profile" />
-    <h2>Liam Shirley</h2>
-    </div>
-    <div>
-    <img src="" alt="picture profile" />
-    <h2>Jason Morrow</h2>
-    </div>
-    <div>
-    <img src="" alt="picture profile" />
-    <h2>Bentley Robinson</h2>
+  <div class="slider">
+    <div id="rightMask"></div>
+    <div id="leftMask"></div>
+    <img src="./img/left-arrow.png" id="left" alt="">
+    <img src="./img/right-arrow.png" id="right" alt="">
+    <div id="elmts">
+      <div>
+        <img src="" alt="picture profile" />
+        <h2>Cole Jackson</h2>
+      </div>
+      <div>
+        <img src="" alt="picture profile" />
+        <h2>Tyler Stewart</h2>
+      </div>
+      <div>
+        <img src="" alt="picture profile" />
+        <h2>Liam Shirley</h2>
+      </div>
+      <div>
+        <img src="" alt="picture profile" />
+        <h2>Jason Morrow</h2>
+      </div>
+      <div>
+        <img src="" alt="picture profile" />
+        <h2>Bentley Robinson</h2>
+      </div>
     </div>
   </div>
       <footer>

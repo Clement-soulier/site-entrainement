@@ -7,8 +7,8 @@ body {
 #scroll {
     position: relative;
     text-align: center;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 #scroll > #elmts {
     width: 500vw;
@@ -50,18 +50,18 @@ body {
     left: 0;
 }
 
-#scroll > #left, #scroll > #right {
+#left, #right {
     position: absolute;
     width: 64px;
     top: calc(20vw - 32px);
-    opacity: 0.5;
+    opacity: 0.3;
     transition: opacity 0.3s;
     cursor: pointer;
     z-index: 100;
     filter: invert(100%);
 }
-#scroll > #left:hover, #scroll > #right:hover {
-    opacity: 1;
+#left:hover, #right:hover {
+    opacity: 0.9;
 }
 #left {
     left: 0;
